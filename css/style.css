@@ -142,8 +142,9 @@ body {
 
 /**/
 #skills{
-    background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898; 
- background-blend-mode: multiply,multiply;
+    
+    background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
+ background-blend-mode: multiply;
  padding: 80px 80px;
 }
 .skill-heading {
@@ -240,41 +241,9 @@ body {
 }
 
 .portrait img {
-    width:50%;
-    border-radius: 50%;
+    width:20%;
   }
 
-  /* ----- CONTACT FORM ----- */
-form{
-    padding-top: 65px;
-    position: relative;
-}
-form > input, form > textarea {
-	display: block;
-    margin-bottom: 15px;
-    background-color: rgb(255, 255, 255);
-    color: rgba(2,66,139,1);
-    padding: 5px;
-    width: 40%;
-}
-form > input{
-    line-height: 30px;
-}
-.btn-send {
-    padding: .6rem 1.3rem;
-    font-size: 1.1rem;
-    border: 1px solid #4facfe;
-    border-radius: 100px;
-    margin-top: 35px;
-    color: white;
-    transition: 0.3s;
-    background-color: #4facfe;
-}
-.btn-send:hover {
-    background-color: white;
-    color: #4facfe;
-    border: 1px solid #4facfe;
-}
 
 /* ----- FOOTER ----- */
 .footer{
