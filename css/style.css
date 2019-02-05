@@ -28,6 +28,7 @@ body {
 
 .fixed-top {
     -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
 }
 
 /**/
@@ -85,7 +86,7 @@ body {
     font-size: 1.5rem;
     text-shadow: .1rem .1rem .8rem #4facfeb2;
     padding-bottom: 1rem;
-    color: dodgerblue;
+    color: #4facfe;
 }
 
 .logo-gs {
