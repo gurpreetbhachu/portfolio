@@ -85,7 +85,7 @@ body {
 #aboutme {
     padding-top: 180px;
     padding-bottom: 180px;
-    background-image: url("/img/mis/bg/2.svg");
+    background-image: url("img/mis/bg/2.svg");
     background-size: cover;
     background-repeat: no-repeat;
 }
