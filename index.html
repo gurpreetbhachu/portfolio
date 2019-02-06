@@ -8,6 +8,10 @@
     <!-- Bootstrap & Custom CSS -->
     <link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/animations.css">
+    <!--[if lte IE 9]>
+      <link href='css/animations-ie-fix.css' rel='stylesheet'>
+<![endif]-->
+    <link href="css/gallery/magnific-popup.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Dosis|Expletus+Sans|Tangerine" rel="stylesheet">
@@ -47,8 +51,9 @@
         <!-- Navigation Ends -->
 
         <div class="caption text-center">
-            <svg version="1.1" id="Layer_1" class="logo-gs animatedParent" data-sequence='600' xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                x="0px" y="0px" viewBox="0 0 216 216" style="enable-background:new 0 0 216 216;" xml:space="preserve">
+            <svg version="1.1" id="Layer_1" class="logo-gs animatedParent" data-sequence='600' xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 216 216" style="enable-background:new 0 0 216 216;"
+                xml:space="preserve">
                 <style type="text/css">
                     .st0 {
                         fill: #231F20;
@@ -264,7 +269,7 @@
             </svg>
             <h1>Front-end Developer & Designer</h1>
             <h3>I code and design creatively, and I ❤ it</h3>
-            <a class="btn btn-outline-dark btn-lg animated" href="#aboutme">about me</a>
+            <a class="btn btn-outline-dark btn-lg animated" href="#skills">My Skills</a>
         </div>
         <!-- Landing Page Ends-->
     </section>
@@ -348,9 +353,10 @@
     <!-- Skills Ends -->
 
     <!-- My Work Starts -->
-    <section id="work">
-        <h1 class="work-heading text-center">My Work</h1>
+    <section id="work" class="animatedParent">
+        <h1 class="work-heading text-center animated fadeInDownShort">My Work</h1>
         <div class="heading-underline"></div>
+        <h2 class="text-center worksubtitle animated fadeInUpShort">Designing</h2>
         <div id="carouselExampleFade" class="carousel slide carousel-fade shadow-md" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -372,6 +378,61 @@
                 <span class="sr-only">Next</span>
             </a>
         </div>
+
+        <h2 class="text-center worksubtitle animated fadeInUpShort">Development</h2>
+        <div id="work-container">
+            <div id="work-project">
+                <div class="container-fluid p-0 animated fadeInUpShort" id="workgallery">
+                    <div class="row no-gutters popup-gallery">
+                        <div class="col-lg-4 col-sm-6">
+                            <a class="portfolio-box" href="img/1.png" target="_blank">
+                                <img class="img-fluid" src="img/1.png" alt="">
+                                <div class="portfolio-box-caption">
+                                    <div class="portfolio-box-caption-content">
+                                        <div class="project-category text-faded">
+                                            Project Category
+                                        </div>
+                                        <div class="project-name">
+                                            Project Name | Live Demo
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <p class="project-detail">Project Detail</p>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <a class="portfolio-box" href="img/1.png" target="_blank">
+                                <img class="img-fluid" src="img/1.png" alt="">
+                                <div class="portfolio-box-caption">
+                                    <div class="portfolio-box-caption-content">
+                                        <div class="project-category text-faded">
+                                            Project Category
+                                        </div>
+                                        <div class="project-name">
+                                            Project Name | Live Demo
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <p class="project-detail">Project Detail</p>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <a class="portfolio-box" href="img/1.png" target="_blank">
+                                <img class="img-fluid" src="img/1.png" alt="">
+                                <div class="portfolio-box-caption">
+                                    <div class="portfolio-box-caption-content">
+                                        <div class="project-category text-faded">
+                                            Project Category
+                                        </div>
+                                        <div class="project-name">
+                                            Project Name | Live Demo
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <p class="project-detail">Project Detail</p>
+                        </div>
+                    </div>
     </section>
     <!-- My Work Ends -->
 
@@ -437,11 +498,13 @@
     </div>
 
     <!-- Script Source Files -->
-    <script src="js/jquery/jquery-3.3.1.min.js"></script>
-    <script src="js/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="js/gallery/jquery.magnific-popup.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/jquery/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/css3-animate-it.js"></script>
     <script src="https://use.fontawesome.com/releases/v5.5.0/js/all.js"></script>
-    <script src="js/main.js"></script>
 </body>
 
 </html>
