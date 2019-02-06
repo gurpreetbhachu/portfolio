@@ -1,10 +1,10 @@
-/**/
+/* ----- Body ----- */
 
 body {
     overflow-x: hidden;
 }
 
-/**/
+/* ----- Navigation Bar ----- */
 
 .navbar {
     font-size: 1rem;
@@ -31,7 +31,7 @@ body {
     backface-visibility: hidden;
 }
 
-/**/
+/* ----- Home ----- */
 
 .caption {
     width: 100%;
@@ -71,7 +71,7 @@ body {
     margin-top: 35px;
     color: #cfe6fa;
     transition: 0.3s;
-    
+    margin-bottom: 35px;
 }
 
 .btn-lg:hover {
@@ -80,14 +80,10 @@ body {
     border: 1px solid #cfe6fa;
 }
 
-/**/
+/* ----- About ----- */
 
 #aboutme {
-    padding-top: 180px;
-    padding-bottom: 180px;
-    background-image: url("img/mis/bg/2.svg");
-    background-size: cover;
-    background-repeat: no-repeat;
+    padding: 100px 100px;  
 }
 
 .aboutme-heading {
@@ -95,7 +91,6 @@ body {
     font-size: 3rem;
     padding-bottom: 2rem;
     text-align: center;
-    margin-bottom: .2rem;
 }
 
 .heading-underline {
@@ -123,7 +118,7 @@ body {
     font-size: 1.3rem;
 }
 
-/**/
+/* ----- Skills ----- */
 
 #skills {
     background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255, 255, 255, 0.40) 0%, rgba(0, 0, 0, 0.25) 200%);
@@ -173,11 +168,26 @@ body {
     content: ':'
 }
 
-/**/
+/* ----- Work ----- */
 
 #work {
     background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
-    height: 100vh;
+}
+
+.worksubtitle {
+    color: black;
+    font-family: 'Expletus Sans', cursive;
+    padding-top: 1.5rem;
+}
+
+.worksubtitle::before {
+    content: '~';
+    color: #4facfe;
+}
+
+.worksubtitle::after {
+    content: '~';
+    color: #4facfe;
 }
 
 .carousel {
@@ -185,6 +195,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     padding-top: 1.5rem;
+    padding-bottom: 2.5rem;
 }
 
 .work-heading {
@@ -196,11 +207,76 @@ body {
     margin-bottom: .2rem;
 }
 
-/* ----- CONTACT ----- */
+/* ----- Work-Portfolio ----- */
 
-#contactme {
-    padding: 80px 80px;
+.portfolio-box {
+    position: relative;
+    display: block;
+    max-width: 650px;
+    margin: 0 auto;
 }
+
+.project-detail{
+    text-align: center;
+}
+
+.portfolio-box .portfolio-box-caption {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    opacity: 0;
+    color: #fff;
+    background: rgba(49, 49, 49, 0.5);
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    padding: 10px auto;
+}
+
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category, .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+    padding: 0 15px;
+}
+
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+    font-size: 18px;
+}
+
+.portfolio-box:hover .portfolio-box-caption {
+    opacity: 1;
+}
+
+.portfolio-box:focus {
+    outline: none;
+}
+
+@media (min-width: 768px) {
+    .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
+        font-size: 16px;
+    }
+    .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+        font-size: 22px;
+    }
+}
+
+
+/* ----- CONTACT ----- */
 
 .contact-heading {
     font-family: 'Expletus Sans', cursive;
@@ -226,11 +302,7 @@ body {
     transition: 0.3s;
 }
 
-.social-list li a {
-    transition: 0.3s;
-}
-
-.social-list li a:hover {
+.social-list li:hover {
     text-shadow: .1rem .1rem .8rem black;
 }
 
