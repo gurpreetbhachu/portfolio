@@ -76,8 +76,9 @@ body {
 
 .btn-lg:hover {
     background-color: #cfe6fa;
-    color: #4facfe;
+    color: #00395c;
     border: 1px solid #cfe6fa;
+    font-weight: bold;
 }
 
 /* ----- About ----- */
@@ -169,10 +170,6 @@ body {
 }
 
 /* ----- Work ----- */
-
-#work {
-    background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
-}
 
 .worksubtitle {
     color: black;
@@ -277,15 +274,17 @@ body {
 
 
 /* ----- CONTACT ----- */
-
+#contactme{
+    background-color: #232323;
+}
 .contact-heading {
     font-family: 'Expletus Sans', cursive;
     font-size: 3rem;
     padding-bottom: 2rem;
     text-align: center;
     margin-bottom: .2rem;
-    color: black;
-    margin-top: 50px;
+    color: rgb(255, 255, 255);
+    padding-top: 50px;
 }
 
 .social {
@@ -345,17 +344,81 @@ body {
 }
 
 .portrait img {
-    width: 200px;
+    width: 250px;
+    padding-bottom: 25px;
 }
 
 /* ----- FOOTER ----- */
 
 .footer {
     line-height: 40px;
+    background-color: #1C1C1C;
 }
 
 .footer p {
     color: rgb(99, 99, 99);
     text-align: center;
     font-size: 18px;
+}
+
+/* ----- All Media ----- */
+/* Large desktop */
+
+@media (min-width: 1200px) {
+    
+    /* OK */
+}
+
+/* Portrait tablet to landscape and desktop */
+
+@media (min-width: 768px) and (max-width: 979px) {
+    .caption {
+        background-color: #c32aa3;
+    }
+    .carousel {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 1.5rem;
+        padding-bottom: 2.5rem;
+    }
+}
+
+/* Landscape phone to portrait tablet */
+
+@media (max-width: 767px) {
+    .caption {
+        background-color: #2ac388;
+    }
+    .carousel {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 1.5rem;
+        padding-bottom: 2.5rem;
+    }
+    .navbar{
+        text-align: center;
+    }
+}
+
+/* Landscape phones and down */
+
+@media (max-width: 480px) {
+    body {
+        overflow-x: hidden;
+    }
+    .caption {
+        background-color: #c1c32a;
+    }
+    .carousel {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 1.5rem;
+        padding-bottom: 2.5rem;
+    }
+    .navbar{
+        text-align: center;
+    }
 }
