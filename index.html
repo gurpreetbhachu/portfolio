@@ -494,9 +494,17 @@
         </div>
 
         <div class="row">
-            <div class="col-md-12 text-center">
+            <div class="col-md-6 text-center">
                 <div class="portrait"><img src="img/logo/gs-avatar.svg" alt="portrait"></div>
             </div>
+		<div class="col-md-6">
+        <form id="contact-form" method="post" action="contact.php">
+            <input name="name" type="text" class="form-control" placeholder="Name" required><br>
+            <input name="email" type="email" class="form-control" placeholder="Email" required><br>
+            <textarea name="message" class="form-control" placeholder="Message" rows="10" required></textarea><br>
+            <input type="submit" class="form-control submit" value="Send Message">
+        </form>
+    </div>
         </div>
     </section>
     <!-- Contact Me Ends -->
