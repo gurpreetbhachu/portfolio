@@ -162,10 +162,14 @@ body {
     font-size: 3rem;
     margin-bottom: 20px;
 }
-
-.quote{
+.quote-div{
     text-align: center;
+}
+.quote{
     margin-top: -100px;
+}
+.resume{
+    display: inline-block;
 }
 /* ----- Work ----- */
 .worksubtitle {
@@ -290,7 +294,6 @@ body {
     color: rgb(255, 255, 255);
     padding-top: 50px;
 }
-
 .social {
     text-align: center;
     padding: 50px 50px;
