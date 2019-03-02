@@ -26,6 +26,7 @@ body {
     color: #4facfe;
 }
 
+
 .fixed-top {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
@@ -39,11 +40,11 @@ body {
     padding-top: 200px;
     padding-bottom: 30px;
     background-color: #00395c;
-    height: 100vh;
+    height: auto;
 }
 
 .caption h1 {
-    font-size: 2.5rem;
+    font-size: 2.5em;
     font-family: 'Expletus Sans', cursive;
     color: #cfe6fa;
     font-weight: bold;
@@ -441,6 +442,10 @@ body {
         padding-top: 1.5rem;
         padding-bottom: 2.5rem;
     }
+    .navbar{
+        text-align: center;
+        width: 100%;
+    }
 }
 
 /* Landscape phone to portrait tablet */
@@ -455,6 +460,7 @@ body {
     }
     .navbar{
         text-align: center;
+        width: 100%;
     }
 }
 
@@ -473,5 +479,6 @@ body {
     }
     .navbar{
         text-align: center;
+        width: 100%;
     }
 }
