@@ -9,6 +9,7 @@ body {
 .navbar {
     font-size: 1rem;
     background-color: rgba(0, 0, 0, 0.651)!important;
+    overflow-x: hidden;
 }
 
 .navbar li {
