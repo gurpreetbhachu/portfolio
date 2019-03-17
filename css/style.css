@@ -357,34 +357,16 @@ body {
     color: #007bb5;
 }
 
-.githb:hover {
-    /*Github*/
-    filter: grayscale(0);
-    color: black;
-}
-
 .fb:hover {
     /*Facebook*/
     filter: grayscale(0);
     color: #3b5998;
 }
 
-.insta:hover {
-    /*Instagram*/
-    filter: grayscale(0);
-    color: #c32aa3;
-}
-
 .tweet:hover {
     /*Twitter*/
     filter: grayscale(0);
     color: #1da1f2;
-}
-
-.yt:hover {
-    /*Youtube*/
-    filter: grayscale(0);
-    color: #ff0000;
 }
 
 .ml:hover {
@@ -406,8 +388,9 @@ body {
 }
 .portrait h4 {
     color: whitesmoke;
-    font-family: 'Tangerine', cursive;
-    font-size: 2.5rem;
+    font-family: 'Expletus Sans', cursive;
+    font-size: 1.5rem;
+    padding-bottom: 15px;
 }
 
 .mapouter{
@@ -471,6 +454,35 @@ body {
     .logo-gs {
         width: 35%;
     }
+    .lin {
+        /*Linkedin*/
+        filter: grayscale(0);
+        color: #007bb5;
+    }
+    
+    .fb {
+        /*Facebook*/
+        filter: grayscale(0);
+        color: #3b5998;
+    }
+    
+    .tweet {
+        /*Twitter*/
+        filter: grayscale(0);
+        color: #1da1f2;
+    }
+    
+    .ml {
+        /*Mail*/
+        filter: grayscale(0);
+        color: rgb(49, 119, 250);
+    }
+    
+    .wa {
+        /*Whatsapp*/
+        filter: grayscale(0);
+        color:#25d366;
+    }
     
 }
 
@@ -490,6 +502,35 @@ body {
     }
     .logo-gs {
         width: 45%;
+    }
+    .lin {
+        /*Linkedin*/
+        filter: grayscale(0);
+        color: #007bb5;
+    }
+    
+    .fb {
+        /*Facebook*/
+        filter: grayscale(0);
+        color: #3b5998;
+    }
+    
+    .tweet {
+        /*Twitter*/
+        filter: grayscale(0);
+        color: #1da1f2;
+    }
+    
+    .ml {
+        /*Mail*/
+        filter: grayscale(0);
+        color: rgb(49, 119, 250);
+    }
+    
+    .wa {
+        /*Whatsapp*/
+        filter: grayscale(0);
+        color:#25d366;
     }
     
 }
@@ -519,5 +560,34 @@ body {
     }
     .caption h3{
         font-size: 1rem;
+    }
+    .lin {
+        /*Linkedin*/
+        filter: grayscale(0);
+        color: #007bb5;
+    }
+    
+    .fb {
+        /*Facebook*/
+        filter: grayscale(0);
+        color: #3b5998;
+    }
+    
+    .tweet {
+        /*Twitter*/
+        filter: grayscale(0);
+        color: #1da1f2;
+    }
+    
+    .ml {
+        /*Mail*/
+        filter: grayscale(0);
+        color: rgb(49, 119, 250);
+    }
+    
+    .wa {
+        /*Whatsapp*/
+        filter: grayscale(0);
+        color:#25d366;
     }
 }
