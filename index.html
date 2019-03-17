@@ -25,9 +25,9 @@
     <!-- Start of HOME -->
     <section id="home">
         <!-- Navigation Starts -->
-        <nav
-            class="navbar navbar-expand-md navbar-dark bg-dark fixed-top shadow p-3 mb-5 bg-white rounded animatedParent">
-            <a class="navbar-brand animated fadeInLefttShort" href="#home">Gurpreet S Bhachu</a>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top shadow p-3 mb-5 bg-white rounded animatedParent"
+            id="navbar">
+            <a class="navbar-brand animated fadeInLefttShort" href="#home" id="gsb-brand">Gurpreet Bhachu</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
                 aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -280,8 +280,8 @@
 	V71.7L27.8,77.3z M182.6,71.5V85l5.6-5.6v-2.2L182.6,71.5z" />
             </svg>
             <h1>Front-end Developer & Designer</h1>
-            <h3>I code & design, and I ❤ it</h3>
-            <a class="btn btn-outline-dark btn-lg animated" href="#skillnav">My Skills</a>
+            <h3>I code and design, and I ❤ it</h3>
+            <a class="btn btn-outline-dark btn-lg animated" href="#skillnav"><i class="fas fa-laptop-code"></i> My Skills</a>
         </div>
         <!-- Landing Page Ends-->
     </section>
@@ -363,7 +363,8 @@
         <div class="quote-div">
             <p class="quote">“Projects I have completed demonstrate what I know - future projects decide what I will
                 learn.”</p>
-                <a class="btn btn-outline-dark btn-lg animated resume" href="img/mis/Gurpreet Singh Bhachu-Resume.pdf" target="_blank">My Resume</a>
+            <a class="btn btn-outline-dark btn-lg animated resume" href="img/mis/Gurpreet Singh Bhachu-Resume.pdf"
+                target="_blank"><i class="far fa-file-alt"></i> My Resume</a>
         </div>
     </section>
     <!-- Skills Ends -->
@@ -374,7 +375,7 @@
             <h1 class="work-heading text-center animated fadeInDownShort">My Work</h1>
             <div class="heading-underline-about"></div>
         </div>
-        <h2 class="text-center worksubtitle animated fadeInUpShort">Designing</h2>
+        <h2 class="text-center worksubtitle animated fadeInUpShort"> Designing </h2>
         <div id="carouselExampleFade" class="carousel slide carousel-fade shadow-md" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -406,60 +407,54 @@
             </a>
         </div>
 
-        <h2 class="text-center worksubtitle animated fadeInUpShort">Development</h2>
-        <div id="work-container">
-            <div id="work-project">
-                <div class="container-fluid p-0 animated fadeInUpShort" id="workgallery">
-                    <div class="row no-gutters popup-gallery">
-                        <div class="col-lg-4 col-sm-6">
-                            <a class="portfolio-box" href="#" onclick="return false;">
-                                <img class="img-fluid" src="img/1.png" alt="">
-                                <div class="portfolio-box-caption">
-                                    <div class="portfolio-box-caption-content">
-                                        <div class="project-category text-faded">
-                                            Project Category
-                                        </div>
-                                        <div class="project-name">
-                                            Project Name | Live Demo
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                            <p class="project-detail"><i class="fas fa-cogs"></i> Updating Soon</p>
-                        </div>
-                        <div class="col-lg-4 col-sm-6">
-                            <a class="portfolio-box" href="#" onclick="return false;">
-                                <img class="img-fluid" src="img/1.png" alt="">
-                                <div class="portfolio-box-caption">
-                                    <div class="portfolio-box-caption-content">
-                                        <div class="project-category text-faded">
-                                            Project Category
-                                        </div>
-                                        <div class="project-name">
-                                            Project Name | Live Demo
+        <h2 class="text-center worksubtitle animated fadeInUpShort"> Development </h2>
+        <div class="container">
+            <div id="work-container">
+                <div id="work-project">
+                    <div class="container-fluid p-0 animated fadeInUpShort" id="workgallery">
+                        <div class="row no-gutters popup-gallery">
+                            <div class="col-lg-6 dev-port-bg shadow">
+                                <a class="portfolio-box" href="https://www.rstt.ca/" target="_blank">
+                                    <img class="img-fluid" src="img/mis/work/dev/rstt.jpg" alt="RST Technoligies Inc.">
+                                    <div class="portfolio-box-caption">
+                                        <div class="portfolio-box-caption-content">
+                                            <div class="project-category text-faded">
+                                                Wordpress Website
+                                            </div>
+                                            <div class="project-name">
+                                                RST Technologies Inc.
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </a>
-                            <p class="project-detail"><i class="fas fa-cogs"></i> Updating Soon</p>
-                        </div>
-                        <div class="col-lg-4 col-sm-6">
-                            <a class="portfolio-box" href="#" onclick="return false;">
-                                <img class="img-fluid" src="img/1.png" alt="">
-                                <div class="portfolio-box-caption">
-                                    <div class="portfolio-box-caption-content">
-                                        <div class="project-category text-faded">
-                                            Project Category
-                                        </div>
-                                        <div class="project-name">
-                                            Project Name | Live Demo
+                                </a>
+                                <p class="project-detail">
+                                        <i class="fas fa-angle-double-right"></i> Developed Website for an Incorporate dealing with Building Facade Design & Providing Engineering service
+                                    </p>
+                                    <p class="project-detail" >
+                                        <a class="live-demo-btn" href="https://www.rstt.ca/" target="_blank"><i class="fas fa-globe-americas"></i> Live Demo</a>  
+                                </p>
+                            </div>
+                            <div class="col-lg-6 dev-port-bg shadow">
+                                <a class="portfolio-box" href="#" onclick="return false;">
+                                    <img class="img-fluid" src="img/1.png" alt="">
+                                    <div class="portfolio-box-caption">
+                                        <div class="portfolio-box-caption-content">
+                                            <div class="project-category text-faded">
+                                                Project Category
+                                            </div>
+                                            <div class="project-name">
+                                                Project Name | Live Demo
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </a>
-                            <p class="project-detail"><i class="fas fa-cogs"></i> Updating Soon</p>
+                                </a>
+                                <p class="project-detail"><i class="fas fa-cogs"></i> Updating Soon</p>
+                            </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
     </section>
     <!-- My Work Ends -->
 
@@ -468,8 +463,72 @@
         <div class="col-12">
             <h1 class="contact-heading text-center">Contact Me</h1>
             <div class="heading-underline"></div>
-            
         </div>
+        <div class="container">
+            <div class="row">
+            <div class="col-lg-6">
+                    <div class="mapouter shadow">
+                        <div class="gmap_canvas">
+                            <iframe width="100%" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=bramton&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+                            </iframe>
+                        </div>
+                    </div>
+            </div>
+            <div class="col-lg-6 text-center shadow contact-box">
+                    <div class="portrait">
+                        <img src="img/logo/gs-avatar.svg" alt="portrait"> 
+                        <h4>Gurpreet Bhachu</h4>
+                    </div>
+                    <div>
+                    <ul class="social-list">
+                            <li><a href="https://wa.me/16473326373" target="_blank">
+                                <span class="fa-stack " style="vertical-align: top;">
+                                    <i class="fas fa-square fa-stack-2x circle"></i>
+                                    <i class="fab fa-whatsapp fa-stack-1x wa social-link"></i>
+                                </span>
+                            </a>
+                        </li>
+                             
+                        <li><a href="mailto:gurpreet.bhachu@hotmail.com?Subject=Hello%20Gurpreet%20S%20Bhachu" target="_top">
+                                <span class="fa-stack" style="vertical-align: top;">
+                                    <i class="fas fa-square fa-stack-2x circle"></i>
+                                    <i class="far fa-envelope fa-stack-1x ml social-link"></i>
+                                </span>
+                            </a></li>
+                             <li></li>   
+                        </ul>
+                    </div>
+                    <div>
+                    <ul class="social-list">
+                            <li>
+                                    <a href="https://www.linkedin.com/in/gurpreetsbhachu/" target="_blank">
+                                        <span class="fa-stack" style="vertical-align: top;">
+                                            <i class="fas fa-square fa-stack-2x circle"></i>
+                                            <i class="fab fa-linkedin-in fa-stack-1x lin social-link"></i>
+                                        </span>
+                                    </a>
+                             </li>
+                        <li>
+                                <a href="https://www.facebook.com/ranny.bhachu" target="_blank">
+                                    <span class="fa-stack" style="vertical-align: top;">
+                                        <i class="fas fa-square fa-stack-2x circle"></i>
+                                        <i class="fab fa-facebook-square fa-stack-1x fb social-link"></i>
+                                    </span>
+                                </a>
+                        </li>
+                        <li><a href="https://twitter.com/bhachu_gurpreet" target="_blank">
+                            <span class="fa-stack" style="vertical-align: top;">
+                                <i class="fas fa-square fa-stack-2x circle"></i>
+                                <i class="fab fa-twitter fa-stack-1x tweet social-link"></i>
+                            </span>
+                        </a></li>
+                    </ul>
+                </div>
+                    </div>
+
+            </div>
+        </div>
+        <!--  
         <div class="social">
             <ul class="social-list">
                 <li><a href="https://wa.me/16473326373" target="_blank">
@@ -528,6 +587,7 @@
                 <div class="portrait"><img src="img/logo/gs-avatar.svg" alt="portrait"></div>
             </div>
         </div>
+        -->
     </section>
     <!-- Contact Me Ends -->
 
