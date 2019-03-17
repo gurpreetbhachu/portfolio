@@ -8,7 +8,7 @@ body {
 
 .navbar {
     font-size: 1rem;
-    background-color: rgba(0, 0, 0, 0.651)!important;
+    background-color: rgb(26, 25, 25)!important;
     overflow-x: hidden;
 }
 
@@ -19,14 +19,22 @@ body {
 
 .navbar-brand {
     font-family: 'Tangerine', cursive;
-    font-size: 40px;
+    font-size: 30px;
     padding-left: 40px;
 }
-
-.navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link:hover {
-    color: #4facfe;
+.navbar-dark .navbar-nav .nav-link.active{
+    color: yellowgreen;
 }
-
+.navbar-dark .navbar-nav .nav-link {
+    color: #4facfe;
+    border-bottom: 2px solid transparent;
+    transition: 0.4s;
+    border-start-end-radius: 50px;
+}
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #4facfe;
+    border-bottom: 2px solid #4facfe;
+}
 
 .fixed-top {
     -webkit-backface-visibility: hidden;
@@ -207,7 +215,9 @@ body {
     text-align: center;
     margin-bottom: .2rem;
 }
-
+#work-container{
+    padding-bottom: 3rem;
+}
 /* ----- Work-Portfolio ----- */
 
 .portfolio-box {
@@ -219,14 +229,27 @@ body {
 
 .project-detail{
     text-align: center;
-    color: yellowgreen;
-    transition: 0.4s;
-    cursor: pointer;
+    color: #00395c;
+    transition: 0.5s;
+    font-weight: 600;
 }
-.project-detail:hover{
-    color: teal;
+.live-demo-btn{
+    text-decoration: none;
+    border: 1.5px solid #4facfe;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 5px 5px;
+    background-color: #4facfe;
+    color: white;
+    transition: 0.3s;
 }
-
+.live-demo-btn:hover{
+    text-decoration: none;
+    color: #4facfe;
+    background-color: transparent;
+}
 .portfolio-box .portfolio-box-caption {
     position: absolute;
     bottom: 0;
@@ -285,7 +308,8 @@ body {
 
 /* ----- CONTACT ----- */
 #contactme{
-    background-color: #232323;
+    background-color: #232323; 
+    padding-bottom: 50px;
 }
 .contact-heading {
     font-family: 'Expletus Sans', cursive;
@@ -367,10 +391,34 @@ body {
 }
 
 .portrait img {
-    width: 250px;
-    padding-bottom: 25px;
+    width: 100px;
+    padding-top: 30px;
+    padding-bottom: 15px;
+}
+.portrait h4 {
+    color: whitesmoke;
+    font-family: 'Tangerine', cursive;
+    font-size: 2rem;
 }
 
+.mapouter{
+    text-align:right;
+    height:500px;
+    width:100%;
+    
+}
+.gmap_canvas {
+    overflow:hidden;
+    background:none!important;
+    height:500px;
+    width:100%;
+    border-radius: 10px;
+}
+
+.contact-box{
+    background-color: rgb(41, 40, 40);
+    border-radius: 10px;
+}
 /* ----- FOOTER ----- */
 
 .footer {
@@ -447,6 +495,9 @@ body {
         text-align: center;
         width: 100%;
     }
+    .logo-gs {
+        width: 35%;
+    }
 }
 
 /* Landscape phone to portrait tablet */
@@ -462,6 +513,9 @@ body {
     .navbar{
         text-align: center;
         width: 100%;
+    }
+    .logo-gs {
+        width: 45%;
     }
 }
 
@@ -481,5 +535,14 @@ body {
     .navbar{
         text-align: center;
         width: 100%;
+    }
+    .logo-gs {
+        width: 45%;
+    }
+    .caption h1{
+        font-size: 2rem;
+    }
+    .caption h3{
+        font-size: 1rem;
     }
 }
